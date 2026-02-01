@@ -88,3 +88,43 @@ button:hover {
   z-index: 100;
   pointer-events: none;
 }
+
+@media (max-width: 500px) {
+  body {
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 98vw;
+    width: 98vw;
+    padding: 18px 4vw;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.13);
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  #line {
+    font-size: 1.05rem;
+    min-width: 0;
+    word-break: break-word;
+    min-height: 60px;
+  }
+  button {
+    font-size: 0.98rem;
+    padding: 10px 12px;
+    border-radius: 18px;
+  }
+  .signature {
+    font-size: 0.95rem;
+    right: 8px;
+    bottom: 6px;
+    z-index: 9999;
+  }
+  .dots-loading span {
+    width: 18px;
+    height: 18px;
+    margin: 0 2px;
+  }
+}
