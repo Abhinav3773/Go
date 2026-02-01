@@ -78,15 +78,18 @@ button:hover {
 
 .signature {
   position: fixed;
-  right: 18px;
-  bottom: 12px;
-  color: #ff0000;
+  right: 2vw;
+  bottom: 2vw;
+  color: #ff3b6f;
   font-size: 1rem;
   font-family: 'Segoe UI', sans-serif;
   opacity: 0.7;
   letter-spacing: 0.5px;
-  z-index: 100;
+  z-index: 99999;
   pointer-events: none;
+  width: max-content;
+  max-width: 90vw;
+  background: none;
 }
 
 @media (max-width: 500px) {
@@ -97,7 +100,8 @@ button:hover {
   }
   .container {
     max-width: 98vw;
-    width: 98vw;
+    width: auto;
+    margin: 0 3vw;
     padding: 18px 4vw;
     border-radius: 10px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.13);
@@ -118,9 +122,10 @@ button:hover {
   }
   .signature {
     font-size: 0.95rem;
-    right: 8px;
-    bottom: 6px;
-    z-index: 9999;
+    right: 2vw;
+    bottom: 2vw;
+    z-index: 99999;
+    max-width: 90vw;
   }
   .dots-loading span {
     width: 18px;
